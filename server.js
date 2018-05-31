@@ -75,6 +75,13 @@ app.get('/about', (req, res) => {
 });
 
 
+app.get('/justPage', (req, res) => {
+    res.render('justPage.hbs',{
+        pageTitle: 'JustPage',
+    })
+ });
+ 
+
 
 app.get('/bad', (req, res) => {
   res.send({
